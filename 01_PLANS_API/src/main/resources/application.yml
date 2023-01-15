@@ -1,0 +1,24 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    password: pratham
+    url: jdbc:h2:mem:testdb
+    username: pratham
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+plan-api:
+ messages:
+  planSaveSucc: Plan Saved Successfully
+  PlanSaveFail: Plan Saving Failed
+  PlanUpdateSucc : Plan Update Successfully
+  PlanUpdateFail : Plan Updating Failed
+  PlanDeleteSucc: Plan Delete Successfully
+  PlanDeleteFail: Plan Deleting Failed
+  PlanStatusChangeSucc : Plan status changed Successfully 
+  PlanStatusChangeFail : Plan status changed Failed 	
